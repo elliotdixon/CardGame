@@ -1,4 +1,5 @@
 import org.junit.Before;
+import org.junit.Test;
 
 
 import static org.junit.Assert.assertEquals;
@@ -21,5 +22,12 @@ public class GameTest {
         losingCard = new Card(SuitType.HEARTS, RankType.THREE);
         winningCard = new Card(SuitType.DIAMONDS, RankType.QUEEN);
         matchingCard = new Card(SuitType.CLUBS, RankType.ACE);
+    }
+
+    @Test
+    public void gameHasPlayers(){
+        assertEquals("Elliot", cardGame.getPlayer1().getName());
+        assertEquals("Adrian", cardGame.getPlayer2().getName());
+
     }
 }

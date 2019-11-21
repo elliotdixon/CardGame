@@ -21,4 +21,5 @@ public class Game {
     public Deck getDeck() {
         return this.myDeck;
     }
+
 }
