@@ -14,19 +14,19 @@ public class DeckTest {
 
 
     @Test
-    public void myDeckHas52Cards() {
+    public void DeckHas52Cards() {
         assertEquals(52, myDeck.getCardsInDeck().size());
     }
 
     @Test
-    public void firstCardInDeckIsAceOfHearts() {
+    public void CheckFirstCard() {
         assertEquals(1, myDeck.getCard().getRank().getValue());
         assertEquals("HEARTS", myDeck.getCard().getSuit().name());
         assertEquals(RankType.ACE, myDeck.getCard().getRank());
     }
 
     @Test
-    public void removeCardFirstCardInDeckIsNowTwoOfHearts() {
+    public void removeCardFirstCard() {
         myDeck.removeCard();
         assertEquals(2, myDeck.getCard().getRank().getValue());
         assertEquals("HEARTS", myDeck.getCard().getSuit().name());
