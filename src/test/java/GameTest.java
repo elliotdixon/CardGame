@@ -28,6 +28,11 @@ public class GameTest {
     public void gameHasPlayers(){
         assertEquals("Elliot", cardGame.getPlayer1().getName());
         assertEquals("Adrian", cardGame.getPlayer2().getName());
+    }
 
+    @Test
+    public void gameHasDeck() {
+        assertEquals(Deck.class, cardGame.getDeck().getClass());
+        assertEquals(52, cardGame.getDeck().getCardsInDeck().size());
     }
 }
